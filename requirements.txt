@@ -12,7 +12,6 @@ cffi==1.14.4
 chardet==3.0.4
 click==6.7
 cloudinary==1.17.0
-colorama==0.4.3
 command-not-found==0.3
 conda==4.3.16
 configobj==5.0.6
