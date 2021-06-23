@@ -1,0 +1,215 @@
+.services-style-one {
+    padding-bottom: 60px;
+    .single-service-style-one {
+        margin-bottom: 60px;
+        .img-box {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba($thm_black, 0.85);
+                opacity: 0;
+                -webkit-transition: all .4s ease;
+                transition: all .4s ease;
+            }
+            &:hover img {
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            &:hover:after {
+                opacity: 1;
+            }
+            >img {
+                width: 100%;
+                -webkit-transition: all .4s ease;
+                transition: all .4s ease;
+            }
+            &:hover {
+                a.read-more {
+                    opacity: 1;
+                }
+            }
+            a.read-more {
+                font-size: 25px;
+                color: #fff;
+                position: absolute;
+                font-weight: 300;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 99;
+                opacity: 0;
+                transition: all .4s ease;
+            }
+        }
+        .text-box {
+            padding-top: 30px;
+            h3,
+            p {
+                margin: 0;
+            }
+            h3 {
+                color: #fff;
+                font-size: 24px;
+                font-weight: 600;
+                transition: all .4s ease;
+                &:hover {
+                    color: $thm_base_color;
+                }
+            }
+            p {
+                margin-top: 30px;
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+    &.white-bg {
+        .single-service-style-one .text-box h3 {
+            color: $thm_black;
+        }
+        .single-service-style-one .text-box h3:hover {
+            color: $thm_base_color;
+        }
+    }
+}
+
+.impact-of-bitcoin {
+    .title-box {
+        h3,
+        p {
+            margin: 0;
+        }
+        span {
+            color: #707070;
+            font-size: 18px;
+        }
+        h3 {
+            font-size: 40px;
+            color: #181818;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 36px;
+            color: #707070;
+            margin-bottom: 40px;
+        }
+    }
+    .chart-label {
+        text-align: center;
+        margin-top: 50px;
+        span.chart {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+            color: #181818;
+            font-weight: 600;
+            position: relative;
+            padding-left: 43px;
+            line-height: 33px;
+            +span.chart {
+                margin-left: 20px;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 33px;
+                height: 33px;
+                background: #067BFF;
+            }
+            &.cc {
+                &:before {
+                    background: #FF0000;
+                }
+            }
+        }
+    }
+}
+
+.distributed-currency {
+    h3.chart-title {
+        margin: 0;
+        color: #181818;
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+        margin: 0;
+        margin-top: 30px;
+    }
+    .distributed-currency-content {
+        span {
+            color: #707070;
+            font-size: 18px;
+        }
+        h3 {
+            color: $thm_black;
+            font-size: 40px;
+            font-weight: 600;
+            margin: 0;
+            margin-top: 10px;
+        }
+        p {
+            color: #707070;
+            font-size: 18px;
+            line-height: 36px;
+            margin: 0;
+            margin-top: 25px;
+        }
+        ul.list-items {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            margin-top: 40px;
+            li {
+                color: #707070;
+                font-size: 18px;
+                position: relative;
+                display: block;
+                padding-left: 30px;
+                +li {
+                    margin-top: 15px;
+                }
+                i {
+                    color: $thm_base_color;
+                    font-size: 16px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.service-features-style-one {padding-bottom: 90px;}
+.single-service-features-style-one {
+    background:#F1F1F1;
+    padding: 41.5px 50px;
+    margin-bottom: 30px;
+    .icon-box, .text-box {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .icon-box {
+        width: 62px;
+        i {color: $thm_base_color;font-size: 62px;}
+    }
+    .text-box {
+        padding-left: 20px;
+        h3, p {margin: 0;}
+        h3 {color: $thm_black;font-size: 20px;font-weight: 600;}
+        p {color: #8A8A8A;font-size: 18px;margin-top: 5px;}
+    }
+}

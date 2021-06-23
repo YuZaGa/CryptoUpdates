@@ -1,0 +1,221 @@
+body {
+    font-family: 'Poppins';
+    color: #717171;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+a:hover,
+a:visited,
+a:focus,
+a:active {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.thm-container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.sec-pad {
+    padding: 120px 0;
+}
+
+.p0 {
+    padding: 0 !important;
+}
+
+.pt0 {
+    padding-top: 0;
+}
+
+.pb0 {
+    padding-bottom: 0 !important;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+.gray-bg {
+    background: #f0f0f0;
+}
+
+.dark-bg {
+    background: #171717;
+}
+
+.light-dark-bg {
+    background: #212121;
+}
+
+.blue-bg {
+    background: #201940;
+}
+
+.dark-blue-bg {
+    background: #1B1537;
+}
+
+.thm-btn {
+    border: none;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+    background: $thm_black;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 11.5px 31px;
+    transition: all .4s ease;
+    &:hover {
+        background: #fff;
+        color: $thm_black;
+    }
+    &.yellow-bg-hvr {
+        &:hover {
+            background: $thm_base_color;
+            color: $thm_black;
+        }
+    }
+    &.yellow-bg {
+        background: $thm_base_color;
+        color: $thm_black;
+        &:hover {
+            background: $thm_black;
+            color: #fff;
+        }
+    }
+    &.white-bg {
+        background: #fff;
+        color: $thm_black;
+        &:hover {
+            background: $thm_black;
+            color: #fff;
+        }
+    }
+    &.blue-bg {
+        background: #45319E;
+        color: #fff;
+        &:hover {
+            background: $thm_black;
+            color: #fff;
+        }
+    }
+}
+
+
+.sec-title {
+    margin-bottom: 50px;
+    span {
+        color: #707070;
+        font-size: 18px;
+    }
+    h3 {margin: 0;font-size: 40px;font-weight: 600;color: $thm_black;}
+    p {font-size: 16px;line-height: 30px;margin-top: 25px;}
+    &.black {
+        span {color: #181818;}
+        h3 {color: #181818;}
+        p {color: rgba(#181818, .7);}
+    }
+    &.light {
+        span {color: #707070;}
+        h3 {color: #fff;}
+        p {color: rgba(#707070, .7);}
+    }
+    &.light-two {
+        span {color: #5D567F;}
+        h3 {color: #fff;}
+        p {color: rgba(#5D567F, .7);}
+    }
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: $thm_base_color;
+    color: #fff;
+    font-size: 17px;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: drop-shadow-converter(#000000, $angle: 90, $distance: 23px, $spread: 0, $size: 42px, $opacity: 20%);
+    transition: all .4s ease;
+    &:hover {
+        background: $thm_black;
+        color: $thm_base_color;
+    }
+}
+
+
+
+
+/*
+****
+only add this classto body
+if preloader is on
+other wise REMOVE IT.
+****
+*/
+
+body.active-preloader-ovh {
+    overflow: hidden;
+}
+
+.preloader {
+    background-color: $thm_base_color;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999;
+    .spinner {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -30px;
+        margin-left: -30px;
+        background-color: $thm_black;
+        border-radius: 100%;
+        -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+        animation: sk-scaleout 1.0s infinite ease-in-out;
+    }
+
+    @-webkit-keyframes sk-scaleout {
+        0% {
+            -webkit-transform: scale(0)
+        }
+        100% {
+            -webkit-transform: scale(1.0);
+            opacity: 0;
+        }
+    }
+    @keyframes sk-scaleout {
+        0% {
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+        100% {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+            opacity: 0;
+        }
+    }
+}

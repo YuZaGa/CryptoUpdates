@@ -1,0 +1,50 @@
+.fun-fact-style-one {
+    .single-fun-fact-style-one {
+        i {
+            color: $thm_base_color;
+            font-size: 75px;
+            margin-bottom: 35px;
+            display: inline-block;
+        }
+        p {
+            color: #707070;
+            font-size: 15px;
+            margin: 0;
+        }
+        h3 {
+            font-size: 50px;
+            color: #FFFFFF;
+            font-weight: normal;
+            margin: 0;
+        }
+    }
+    &.blue-bg {
+        .single-fun-fact-style-one {
+            p {
+                color: #5D567F;
+            }
+        }
+    }
+    &.yellow-bg {
+        position: relative;
+        background: $thm_base_color url(../img/background-1-1.jpg) center center no-repeat fixed;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: $thm_base_color;
+            opacity: .95;
+        }
+        .thm-container {
+            position: relative;
+        }
+        .single-fun-fact-style-one {
+        	i {color: #181818;}
+        	p {color: #181818;margin-top: 10px;}
+        	h3 {color: #181818;}
+        }
+    }
+}

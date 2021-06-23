@@ -1,0 +1,266 @@
+.token-distribution {
+    .token-distribution-content {
+        span {
+            font-size: 18px;
+            color: #5D567F;
+        }
+        h3 {
+            margin: 0;
+            font-size: 40px;
+            color: #fff;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 25px;
+            margin-top: 5px;
+        }
+        p {
+            margin: 0;
+            font-size: 16px;
+            line-height: 30px;
+            color: #5D567F;
+        }
+    }
+    .token-list {
+        list-style: none;
+        padding: 0px;
+        margin-top: 30px;
+        li {
+            font-size: 16px;
+            color: #5d567f;
+            line-height: 40px;
+            span {
+                color: #fff;
+                width: 40px;
+                display: inline-block;
+                vertical-align: middle;
+                margin: 0px 0px;
+                padding-left: 5px;
+            }
+            .yellow {
+                color: #fab915;
+            }
+            .pink {
+                color: #ff505a;
+            }
+            .blue {
+                color: #3f4fc9;
+            }
+            .gray {
+                color: #6b6b6b;
+            }
+            .purple {
+                color: #9400d3;
+            }
+            .sky {
+                color: #35afce;
+            }
+            .green {
+                color: #2cd498;
+            }
+        }
+    }
+    .graph {
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+            .fa {
+                color: #45319e;
+            }
+        }
+        >a {
+            + {
+                .tooltip {
+                    >.tooltip-inner {
+                        padding: 12px 24px;
+                        font-size: 12px;
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+        >a.dot1 {
+            + {
+                .tooltip {
+                    >.tooltip-inner {
+                        background-color: #fab915;
+                    }
+                    >.tooltip-arrow {
+                        border-top-color: #fab915;
+                    }
+                }
+            }
+        }
+        a.dot1 {
+            &:hover {
+                i {
+                    color: #fab915;
+                }
+            }
+        }
+        >a.dot3 {
+            + {
+                .tooltip {
+                    >.tooltip-inner {
+                        background-color: #ff505a;
+                    }
+                    >.tooltip-arrow {
+                        border-top-color: #ff505a;
+                    }
+                }
+            }
+        }
+        a.dot3 {
+            &:hover {
+                i {
+                    color: #ff505a;
+                }
+            }
+        }
+        >a.dot4 {
+            + {
+                .tooltip {
+                    >.tooltip-inner {
+                        background-color: #3f4fc9;
+                    }
+                    >.tooltip-arrow {
+                        border-top-color: #3f4fc9;
+                    }
+                }
+            }
+        }
+        a.dot4 {
+            &:hover {
+                i {
+                    color: #3f4fc9;
+                }
+            }
+        }
+        >a.dot5 {
+            + {
+                .tooltip {
+                    >.tooltip-inner {
+                        background-color: #6b6b6b;
+                    }
+                    >.tooltip-arrow {
+                        border-top-color: #6b6b6b;
+                    }
+                }
+            }
+        }
+        a.dot5 {
+            &:hover {
+                i {
+                    color: #6b6b6b;
+                }
+            }
+        }
+        >a.dot7 {
+            + {
+                .tooltip {
+                    >.tooltip-inner {
+                        background-color: #35afce;
+                    }
+                    >.tooltip-arrow {
+                        border-top-color: #35afce;
+                    }
+                }
+            }
+        }
+        a.dot7 {
+            &:hover {
+                i {
+                    color: #35afce;
+                }
+            }
+        }
+        >a.dot6 {
+            + {
+                .tooltip {
+                    >.tooltip-inner {
+                        background-color: #9400d3;
+                    }
+                    >.tooltip-arrow {
+                        border-top-color: #9400d3;
+                    }
+                }
+            }
+        }
+        a.dot6 {
+            &:hover {
+                i {
+                    color: #9400d3;
+                }
+            }
+        }
+        >a.dot2 {
+            + {
+                .tooltip {
+                    >.tooltip-inner {
+                        background-color: #0fc383;
+                    }
+                    >.tooltip-arrow {
+                        border-top-color: #0fc383;
+                    }
+                }
+            }
+        }
+        a.dot2 {
+            &:hover {
+                i {
+                    color: #0fc383;
+                }
+            }
+        }
+        position: relative;
+    }
+    .dot1 {
+        position: absolute;
+        display: inline-grid;
+        top: 12px;
+        right: 46%;
+        font-size: 43px;
+    }
+    .dot2 {
+        display: inline-grid;
+        position: absolute;
+        top: 13%;
+        left: 10.5%;
+        font-size: 81px;
+    }
+    .dot3 {
+        position: absolute;
+        display: inline-grid;
+        top: 22.5%;
+        right: 16.3%;
+        font-size: 64px;
+    }
+    .dot4 {
+        position: absolute;
+        display: inline-grid;
+        right: 14%;
+        font-size: 84px;
+        bottom: 22.5%;
+    }
+    .dot5 {
+        position: absolute;
+        display: inline-grid;
+        right: 43%;
+        font-size: 55px;
+        bottom: 2.2%;
+    }
+    .dot6 {
+        position: absolute;
+        display: inline-grid;
+        font-size: 49px;
+        bottom: 12.2%;
+        left: 15%;
+    }
+    .dot7 {
+        position: absolute;
+        display: inline-grid;
+        font-size: 32px;
+        bottom: 40.7%;
+        left: 2.9%;
+    }
+}

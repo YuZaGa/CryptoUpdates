@@ -1,0 +1,13 @@
+.btc-static-ticker {
+	background:#45319E;
+	padding: 14px 0;
+	.bx-wrapper {border: none;box-shadow: none;background-color: transparent;border: none;margin-bottom: 0;}
+	.single-btc-static-ticker {
+		text-align: center;
+		img {display: inline-block;vertical-align: middle;}
+		span {display: inline-block;vertical-align: middle;}
+		span.name {color: #fff;font-size: 14px;	font-weight: 600;}
+		span.amount {color: #7F6BD7;font-size: 14px;font-weight: 500;}
+		span.stats {color: #FAB915;font-size: 11px;}
+	}
+}

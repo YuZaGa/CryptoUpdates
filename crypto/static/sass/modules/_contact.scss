@@ -1,0 +1,150 @@
+form.contact-form {
+    input,
+    textarea {
+        border: none;
+        outline: none;
+        background: #fff;
+        width: 100%;
+        height: 53px;
+        padding-left: 30px;
+        font-size: 14px;
+        color: #717171;
+        @include placeholder {
+            color: #717171;
+        }
+        margin-bottom: 30px;
+        &.error {
+            background: rgba(red, .4) !important;
+        }
+    }
+    textarea {
+        height: 130px;
+        padding-top: 20px;
+    }
+    label.error {
+        display: none !important;
+    }
+    .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .bootstrap-select>.dropdown-toggle {
+        padding: 16.5px 0;
+        padding-left: 30px;
+        color: #fff;
+        background: #fff;
+        border-radius: 0;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        color: #717171;
+    }
+    .dropdown-menu {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .dropdown-menu>li>a {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+    .dropdown-menu>li>a:hover {
+        background: #f0f0f0;
+        color: #171717;
+    }
+    .dropdown-menu>li.selected>a {
+        background: #171717;
+        color: #fff;
+    }
+    button.thm-btn {
+        width: 210px;
+        text-align: center;
+    }
+}
+
+.rqa-area {
+    .rqa-title {
+        span {
+            font-size: 18px;
+        }
+        h3 {
+            margin: 0;
+            color: $thm_black;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+        p {
+            margin: 0;
+            font-size: 18px;
+            line-height: 36px;
+        }
+    }
+    form.contact-form {
+        margin-left: -10px;
+        margin-right: -10px;
+        [class*=col-md] {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        input,
+        textarea,
+        .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.contact-page-wrapper {
+    form.contact-form {
+        input,
+        textarea {
+            background: #F1F1F1;
+            color: #717171;
+            @include placeholder {
+                color: #717171;
+            }
+        }
+        textarea {
+            height: 239px;
+        }
+        .bootstrap-select>.dropdown-toggle {
+            background: #F1F1F1;
+            color: #717171;
+        }
+    }
+}
+
+.contact-sidebar {
+    background: $thm_base_color;
+    padding: 51.5px 55px;
+    .single-contact-info {
+    	+ .single-contact-info {margin-top: 35px;}
+        .title {
+        	margin-bottom: 6px;
+            h3 {
+                margin: 0;
+                color: #181818;
+                font-size: 16px;
+            }
+        }
+        p {
+            margin: 0;
+            line-height: 28px;
+            font-size: 16px;
+            color: rgba(#181818, .60);
+        }
+        .social {
+            a {
+                color: rgba(#181818, .60);
+                font-size: 18px;
+                transition: all .4s ease;
+                +a {
+                    margin-left: 30px;
+                }
+                &:hover {
+                    color: rgba(#181818, 1);
+                }
+            }
+        }
+    }
+}

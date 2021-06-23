@@ -1,0 +1,175 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Cryptonite</title>
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="{% static 'img/favicon/manifest.json' %}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    
+</head>
+<body class="active-preloader-ovh">
+
+<div class="preloader"><div class="spinner"></div></div><!-- /.preloader -->
+
+
+
+<header class="header header-home-one">
+    <nav class="navbar navbar-default header-navigation stricky">
+        <div class="thm-container clearfix">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+  
+        </div><!-- /.container -->
+    </nav>   
+</header><!-- /.header -->
+
+
+<div id="minimal-bootstrap-carousel" class="carousel slide carousel-fade slider-home-one" data-ride="carousel">
+	<div id="particles-js"></div><!-- /#particles-js -->           
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active slide-1" style="background-image: url({% static 'img/banner-1-1-1.png' %});background-position: right bottom;">
+            
+            <div class="carousel-caption">
+                <div class="thm-container">
+                    <div class="box valign-middle">
+                        <div class="content ">
+                            <h3 data-animation="animated fadeInUp">Easy way to <br />  track bitcoins</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>                
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Chart ---------------------------------------------------------- -->
+<section class="exchange-table-section white-bg sec-pad">
+    <div class="thm-container">
+		
+        <div class="table-responsive exchange-table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">24h High</th>
+                        <th scope="col">24h Low</th>
+                        <th scope="col">Market Cap</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for key,value in prices.items %}
+                    <tr>
+                        <th scope="row">{{ forloop.counter }}</th>
+                        <td>{{ key }}</td>
+                        <td>{{ value.USD.PRICE }}</td>
+                        <td>{{ value.USD.HIGHDAY }}</td>
+                        <td>{{ value.USD.LOWDAY }}</td>
+                        <td>{{ value.USD.MKTCAP }}</td>
+                    </tr>
+                    {% endfor %}
+                 
+                    
+                </tbody>
+            </table><!-- /.table -->
+        </div><!-- /.table-responsive -->
+
+    </div><!-- /.thm-container -->
+</section><!-- /.exchange-table-section -->
+
+<!-- Value Converter ----------------------------------------------------------------  -->
+
+
+
+<!-- Latest News---------------------------------------------------------------- -->
+
+<section class="sec-pad blog-style-one">
+	<div class="thm-container">
+		<div class="sec-title text-center">
+			<h3>Latest News</h3>
+		</div><!-- /.sec-title text-center -->
+		<div class="row">
+			
+            {% for news in newses|slice:":12" %}  
+            <div class="col-md-3 col-sm-6 col-xs-12">
+				
+             
+                <div class="single-blog-style-one">
+					<div class="img-box">
+						<img src="{{ news.imageurl }}" alt="Awesome Image"/>
+						<a href="{{ news.url }}" class="read-more">+</a>
+					</div><!-- /.img-box -->
+					<div class="text-box">
+						<div class="meta-info">
+						</div><!-- /.meta-info -->
+						<a href="{{ news.url }}"><h3>{{ news.title|truncatechars:'120' }}</h3></a>
+					</div><!-- /.text-box -->
+				</div><!-- /.single-blog-style-one -->
+
+           
+			</div><!-- /.col-md-3 -->
+            {% endfor %}
+         
+            
+		</div><!-- /.row -->
+	</div><!-- /.thm-container -->
+</section><!-- /.sec-pad blog-style-one -->
+
+
+<div class="footer-bottom">
+	<div class="thm-container clearfix" style="justify-content: center;">
+	
+		
+		<div class="sec-title text-center">
+			<p>Made with <a><i class="fa fa-heart"></i></a> by <a href="https://yumngauhar.live" >YuZaGa</a></p>
+		</div>
+
+	</div><!-- /.thm-container -->
+	
+</div><!-- /.footer-bottom -->
+
+
+
+
+
+<div class="scroll-to-top scroll-to-target" data-target="html"><i class="fa fa-angle-up"></i></div>                    
+
+<script src="{% static 'js/jquery.js' %}"></script>
+
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'js/jquery.validate.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/isotope.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.min.js' %}"></script>
+<script src="{% static 'js/particles.min.js' %}"></script>
+<script src="{% static 'js/particles-config.js' %}"></script>
+<script src="{% static 'js/chart-config.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+</body>
+</html>

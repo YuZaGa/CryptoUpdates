@@ -1,0 +1,23 @@
+// theme variables
+$thm_font: 'Poppins';
+$thm_base_color: #F9B81F;                                             
+$thm_black: #171717;
+$thm_gray: #F0F0F0;
+$thm_text: #707070;
+
+
+@mixin placeholder {
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        @content;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        @content;
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+        @content;
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+}
+

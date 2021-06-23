@@ -1,0 +1,97 @@
+.exchange-table {
+    .table thead tr th {
+        background: $thm_base_color;
+        color: $thm_black;
+        font-size: 16px;
+        font-weight: 600;
+        border: none;
+        line-height: 60px;
+        padding: 0;
+    }
+    .table thead tr th:first-child {
+        padding-left: 50px;
+    }
+    .table tbody tr td {
+        color: #707070;
+        font-size: 16px;
+        font-weight: 500;
+        border: none;
+        background-color: #181818;
+        line-height: 60px;
+        padding: 0;
+    }
+    .table tbody tr:nth-child(odd) td {
+        background-color: #262626;
+    }
+    .table tbody tr td:first-child {
+        color: #FFFFFF;
+        padding-left: 50px;
+        span {
+            color: #707070;
+            text-transform: uppercase;
+        }
+    }
+    .table tbody tr td:last-child {
+        color: #FFFFFF;
+    }
+}
+
+.white-bg {
+    .table thead tr th {
+        background: $thm_base_color;
+        color: $thm_black;
+    }
+    .table tbody tr td {
+        color: #181818;
+        background-color: #fff;
+    }
+    .table tbody tr:nth-child(odd) td {
+        background-color: #F1F1F1;
+    }
+    .table tbody tr td:first-child {
+        color: #181818;
+        span {
+            color: #707070;
+        }
+    }
+    .table tbody tr td:last-child {
+        color: #181818;
+    }
+}
+
+.exchange-btn-box {
+    margin-top: 50px;
+    a.thm-btn {
+        width: 258px;
+        text-align: center;
+        &:hover {
+            background: $thm_base_color;
+            color: $thm_black;
+        }
+    }
+    a.thm-btn-style-two {
+        padding: 0;
+        background: $thm_base_color;
+        color: #181818;
+        line-height: 53px;
+        width: 258px;
+        margin-right: 15px;
+        text-align: left;
+        i {
+            font-size: 18px;
+            width: 53px;
+            border-right: 1px solid rgba(#fff, .25);
+            height: 53px;
+            line-height: 53px;
+            margin-right: 20px;
+            text-align: center;
+        }
+        &:hover {
+            background: #171717;
+            color: #fff;
+            i {
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,175 @@
+.team-style-one {
+    padding-bottom: 60px;
+    .single-team-style-one {
+        margin-bottom: 60px;
+        display: block;
+        .img-box {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba($thm_black, 0.85);
+                opacity: 0;
+                -webkit-transition: all .4s ease;
+                transition: all .4s ease;
+            }
+            &:hover img {
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+            &:hover:after {
+                opacity: 1;
+            }
+            >img {
+                width: 100%;
+                -webkit-transition: all .4s ease;
+                transition: all .4s ease;
+            }
+        }
+        .text-box {
+            padding-top: 30px;
+            border: 2px solid #F1F1F1;
+            border-top: 0;
+            padding-bottom: 30px;
+            h3,
+            p {
+                margin: 0;
+            }
+            h3 {
+                color: #171717;
+                font-size: 20px;
+            }
+            span {
+                color: #383838;
+                font-size: 14px;
+                line-height: 1em;
+                display: inline-block;
+            }
+            p {
+                line-height: 28px;
+                margin-top: 24px;
+                margin-bottom: 30px;
+            }
+            .social {
+                a {
+                    color: #D2D2D2;
+                    font-size: 18px;
+                    transition: all .4s ease;
+                    +a {
+                        margin-left: 30px;
+                    }
+                    &:hover {
+                        color: $thm_base_color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team-style-two {
+    [class*=col-md] {
+        +[class*=col-md] {
+            border-left: 1px solid rgba(#fff, 0.06);
+        }
+    }
+    .row + .row {margin-top: 60px;}
+    .single-team-style-two {
+        text-align: center;
+        .img-box {
+            width: 212px;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            > img {width: 100%;border-radius: 50%;}
+        }
+        .text-box {
+            h3,
+            p {
+                margin: 0;
+            }
+            h3 {
+                font-size: 18px;
+                color: #fff;
+                font-weight: 600;
+                margin-top: 30px;
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 16px;
+                color: #5D567F;
+                line-height: 26px;
+            }
+            .social {
+                margin-top: 15px;
+                a {
+                    color: #5D567F;
+                    font-size: 18px;
+                    transition: all .4s ease;
+                    +a {
+                        margin-left: 30px;
+                    }
+                    &:hover {
+                        color: $thm_base_color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team-style-three {
+    .row + .row {margin-top: 60px;}
+    .single-team-style-three {
+        .img-box,
+        .text-box {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .img-box {
+            width: 132px;
+            >img {
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .text-box {
+            padding-left: 20px;
+            h3,
+            p {
+                margin: 0;
+            }
+            h3 {
+                font-size: 18px;
+                color: #fff;
+                font-weight: 600;
+                margin-bottom: 25px;
+            }
+            p {
+                font-size: 16px;
+                color: #5D567F;
+                line-height: 26px;
+            }
+            .social {
+                margin-top: 15px;
+                a {
+                    color: #5D567F;
+                    font-size: 18px;
+                    transition: all .4s ease;
+                    +a {
+                        margin-left: 30px;
+                    }
+                    &:hover {
+                        color: $thm_base_color;
+                    }
+                }
+            }
+        }
+    }
+}
