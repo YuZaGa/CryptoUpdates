@@ -1,0 +1,34 @@
+.single-how-it-works {
+	.icon-box {
+		display: inline-block;
+		vertical-align: middle;
+		width: 140px;
+		height: 140px;
+		border: 3px solid $thm_black;
+		border-radius: 50%;
+		position: relative;
+		text-align: center;
+		i {font-size: 55px;line-height: 134px;color: $thm_black;}
+		.count {display: inline-block;width: 36px;height: 36px;border-radius: 50%;border: 3px solid $thm_black;background:$thm_base_color;position: absolute;top: 50%;transform: translateY(-50%);left: -18px;text-align: center;font-weight: 600;color: $thm_black;}
+	}
+	h3, p {margin: 0;}
+	h3 {font-size: 20px;color: $thm_black;font-weight: 600;margin-top: 35px;margin-bottom: 20px;}
+}
+
+.how-it-works {
+	.row {
+		[class*=col-md-] {
+			position: relative;
+			+ [class*=col-md-]:before {
+				position: absolute;
+				content: '';
+				width: 183px;
+				height: 14px;
+				position: absolute;
+				top: 70px;
+				left: -95px;
+				background: transparent url(../img/arrow-1-1.png) center center no-repeat;
+			}
+		}
+	}
+}

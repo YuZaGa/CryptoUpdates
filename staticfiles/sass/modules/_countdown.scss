@@ -1,0 +1,39 @@
+.count-down-style-one-wrapper {
+	position: relative;
+	background: $thm_base_color url(../img/background-1-1.jpg) center center no-repeat fixed;
+	&:before {
+		content: '';
+		position: absolute;
+		top:0;
+		left:0;
+		right: 0;
+		bottom: 0;
+		background:$thm_black;
+		opacity: .95;
+	}
+	.thm-container {
+		position: relative;
+	}
+	.countdown-title {
+		h3,p {margin: 0;}
+		h3 {font-size: 30px;font-weight: 600;color: #fff;}
+		p {font-size: 16px;line-height: 30px;color: #707070;margin-top: 30px;}
+	}
+	.count-down-style-one {
+		padding-left: 95px;
+		ul {
+			margin: 0;padding: 0;list-style: none;
+			margin-left: -5px;
+			margin-right: -5px;
+			li {display: inline-block;vertical-align: middle;padding-left: 5px;padding-right: 5px;
+				.box {
+					border: 2px solid $thm_base_color;
+					text-align: center;
+					width: 104px;
+					h4 {margin: 0;font-size: 50px;font-weight: 300;color: #fff;padding: 25px 0;}
+					span {background:$thm_base_color;display: block;color: $thm_black;line-height: 45px;}
+				}
+			}
+		}
+	}
+}

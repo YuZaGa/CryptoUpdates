@@ -1,0 +1,38 @@
+.brand-carousel {
+    i {
+        font-size: 155px;
+        color: #707070;
+        transition: all .4s ease;
+        &:hover {
+            color: $thm_black;
+        }
+    }
+}
+
+.brand-carousel-wrapper {
+	padding: 91px 0;
+	.owl-theme .owl-nav {display: none;}
+    &.light-blue-bg {
+        background: #45319e;
+        .brand-carousel {
+            i {color: #7F6BD7;
+                &:hover {color: #fff;}
+            }
+        }
+    }
+    &.gray-bg {
+        .brand-carousel {
+            i {color: #b0b0b0;
+                &:hover {color: $thm_base_color;}
+            }
+        }
+    }
+    &.yellow-bg {
+        background:$thm_base_color;
+        .brand-carousel {
+        	i {color: $thm_black;
+				&:hover {color: #fff;}
+        	}
+        }
+    }
+}

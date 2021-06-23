@@ -1,0 +1,18 @@
+.inner-banner {
+	padding: 38px 0;
+	.breadcumb {
+		a, span {display: inline-block;vertical-align: middle;color: #707070;font-size: 16px;line-height: 1em;transition: all .4s ease;}
+		span.sep {margin-left: 5px;margin-right: 5px;}
+		a:hover {color: $thm_base_color;}
+		span.page-name {color: $thm_black;}
+	}	
+	h3 {margin: 0;color: #181818;font-size: 30px;font-weight: 600;}
+	&.blue-bg {
+		padding-top: 158px;
+		.breadcumb {
+			a, span.sep {color: #5D567F;}
+			span.page-name {color: $thm_base_color;}
+		}
+		h3 {color: #fff;}
+	}
+}

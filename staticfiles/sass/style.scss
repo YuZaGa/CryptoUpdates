@@ -1,0 +1,255 @@
+/***************************************************************************************************************
+|||||||||||||||||||||||||||||||       MASTER STYLESHEET FOR Bomex             ||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+||||||||||||||||||||||||||||              TABLE OF CONTENT                  ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+****************************************************************************************************************
+* 1. imported styles 
+* 2. miscelnious styles 
+* 3. header styles 
+* 4. banner styles 
+* 5. search popup styles 
+* 6. hidden sidebar styles 
+* 7. features styles 
+* 8. about styles 
+* 9. fun fact styles 
+* 10. blog styles 
+* 11. btc calculator styles 
+* 12. how it works styles 
+* 13. charts styles 
+* 14. team styles 
+* 15. footer styles 
+* 16. countdown styles 
+* 17. cta styles 
+* 18. testimonials styles 
+* 19. brand styles 
+* 20. btc ticker styles 
+* 21. video box styles 
+* 22. video box styles 
+* 23. timeline styles 
+* 24. token sales styles 
+* 25. press release styles 
+* 26. contact styles 
+* 27. coin statics styles 
+* 28. case study styles 
+* 29. service styles 
+* 30. exchange styles 
+* 31. inner banner styles 
+* 32. errpr 404 styles 
+* 33. transfer btc styles 
+* 34. sidebar styles 
+****************************************************************************************************************
+||||||||||||||||||||||||||||            End TABLE OF CONTENT                ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************/
+
+
+// math functions are not included in sass
+@import "drop-shadow-converter/mathfunctions";
+// import converter
+@import "drop-shadow-converter/drop-shadow-converter";
+// template sass helper functions
+@import "_helper-function.scss";
+
+/************************** 
+* 1. imported styles 
+***************************/
+
+@import 'modules/_imported';
+
+/************************** 
+* 2. miscelnious styles 
+***************************/
+
+@import 'modules/_miscelnious';
+
+/************************** 
+* 3. header styles 
+***************************/
+
+@import 'modules/_header';
+
+/************************** 
+* 4. banner styles 
+***************************/
+
+@import 'modules/_banner';
+
+/************************** 
+* 5. search popup styles 
+***************************/
+
+@import 'modules/_search-popup';
+
+/************************** 
+* 6. hidden sidebar styles 
+***************************/
+
+@import 'modules/_hidden-sidebar';
+
+/************************** 
+* 7. features styles 
+***************************/
+
+@import 'modules/_features';
+
+/************************** 
+* 8. about styles 
+***************************/
+
+@import 'modules/_about';
+
+/************************** 
+* 9. fun fact styles 
+***************************/
+
+@import 'modules/_fun-fact';
+
+/************************** 
+* 10. blog styles 
+***************************/
+
+@import 'modules/_blog';
+
+/************************** 
+* 11. btc calculator styles 
+***************************/
+
+@import 'modules/_btc-calculator';
+
+/************************** 
+* 12. how it works styles 
+***************************/
+
+@import 'modules/_how-it-works';
+
+/************************** 
+* 13. charts styles 
+***************************/
+
+@import 'modules/_chart';
+
+/************************** 
+* 14. team styles 
+***************************/
+
+@import 'modules/_team';
+
+/************************** 
+* 15. footer styles 
+***************************/
+
+@import 'modules/_footer';
+
+/************************** 
+* 16. countdown styles 
+***************************/
+
+@import 'modules/_countdown';
+
+/************************** 
+* 17. cta styles 
+***************************/
+
+@import 'modules/_cta';
+
+/************************** 
+* 18. testimonials styles 
+***************************/
+
+@import 'modules/_testimonials';
+
+/************************** 
+* 19. brand styles 
+***************************/
+
+@import 'modules/_brand';
+
+/************************** 
+* 20. btc ticker styles 
+***************************/
+
+@import 'modules/_btc-ticker-slider';
+
+/************************** 
+* 21. video box styles 
+***************************/
+
+@import 'modules/_video-box';
+
+/************************** 
+* 22. video box styles 
+***************************/
+
+@import 'modules/_token-distribution';
+
+/************************** 
+* 23. timeline styles 
+***************************/
+
+@import 'modules/_timeline';
+
+/************************** 
+* 24. token sales styles 
+***************************/
+
+@import 'modules/_token-sales';
+
+/************************** 
+* 25. press release styles 
+***************************/
+
+@import 'modules/_press-release';
+
+/************************** 
+* 26. contact styles 
+***************************/
+
+@import 'modules/_contact';
+
+/************************** 
+* 27. coin statics styles 
+***************************/
+
+@import 'modules/_coin-statics';
+
+/************************** 
+* 28. case study styles 
+***************************/
+
+@import 'modules/_case-study';
+
+/************************** 
+* 29. service styles 
+***************************/
+
+@import 'modules/_services';
+
+/************************** 
+* 30. exchange styles 
+***************************/
+
+@import 'modules/_exchange';
+
+/************************** 
+* 31. inner banner styles 
+***************************/
+
+@import 'modules/_inner-banner';
+
+/************************** 
+* 32. errpr 404 styles 
+***************************/
+
+@import 'modules/_error-404';
+
+/************************** 
+* 33. transfer btc styles 
+***************************/
+
+@import 'modules/_transfer-btc';
+
+/************************** 
+* 34. sidebar styles 
+***************************/
+
+@import 'modules/_sidebar';

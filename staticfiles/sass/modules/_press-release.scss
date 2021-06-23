@@ -1,0 +1,33 @@
+.single-press-release {
+    text-align: center;
+    .img-box {
+        background: #45319E;
+        i {
+            font-size: 200px;
+            color: #fff;
+        }
+        position: relative;
+        .overlay {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: #412E97;
+            transform: rotateX(-90deg);
+            transform-origin: 0 0;
+            transition: all .4s ease;
+            p {
+                color: #7F6BD7;
+                font-size: 16px;
+                line-height: 30px;
+                margin: 0;
+                padding: 40px;
+            }
+        }
+        &:hover {
+            .overlay {
+                transform: rotateY(0deg);
+            }
+        }
+    }
+}
