@@ -74,6 +74,7 @@
                         <th scope="col">Price</th>
                         <th scope="col">24h High</th>
                         <th scope="col">24h Low</th>
+                        <th scope="col">Change/24h</th>
                         <th scope="col">Market Cap</th>
                     </tr>
                 </thead>
@@ -82,10 +83,11 @@
                     <tr>
                         <th scope="row">{{ forloop.counter }}</th>
                         <td>{{ key }}</td>
-                        <td>{{ value.USD.PRICE }}</td>
-                        <td>{{ value.USD.HIGHDAY }}</td>
-                        <td>{{ value.USD.LOWDAY }}</td>
-                        <td>{{ value.USD.MKTCAP }}</td>
+                        <td>{{ value.INR.PRICE }}</td>
+                        <td>{{ value.INR.HIGHDAY }}</td>
+                        <td>{{ value.INR.LOWDAY }}</td>
+                        <td>{{ value.INR.CHANGEPCTDAY }}</td>
+                        <td>{{ value.INR.MKTCAP }}</td>
                     </tr>
                     {% endfor %}
                  
