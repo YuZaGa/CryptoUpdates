@@ -1,5 +1,5 @@
 # CryptoUpdates
-A Django based implementations of Crypto tracking websites whhich consumes Cryptocompare APIs and display latest news and trading deatils about Crypto currency.
+A Django based implementation of Crypto tracking websites which consumes Cryptocompare APIs and display latest news and trading details about Crypto currency.
 
 
 <h2>Project snapshot</h2>
