@@ -30,7 +30,7 @@ A Django based implementations of Crypto tracking websites whhich consumes Crypt
 6. Run app: ``` python manage.py runserver ```
 7. Then go to http://127.0.0.1:8000/home in your browser
 
-Bonus - Publish it on Heroku with Cloudinary serving as image storage solution. 
+Bonus - Publish it on Heroku.
 
 https://codeburst.io/deploy-your-django-project-for-free-140d73a2c76b
 
